@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pardon Run — One Turkey's Great Escape</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #2a1608;
+    overflow: hidden;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  #stage {
+    position: relative;
+    width: min(100vw, 177.78vh);
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 0 60px rgba(0,0,0,.55);
+  }
+  canvas {
+    display: block;
+    width: 100%; height: 100%;
+    background: #f7c873;
+    touch-action: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="1280" height="720"></canvas>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
